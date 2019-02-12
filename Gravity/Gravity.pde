@@ -1,8 +1,10 @@
 // started code w/api
 
-float position;
-float speed;
+//declare and initializes variables
+float position = 0;
+float speed = 0;
 
+//declares an image type object
 PImage face;
 
 void setup() {
