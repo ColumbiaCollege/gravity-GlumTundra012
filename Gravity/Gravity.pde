@@ -38,12 +38,12 @@ void draw() {
   //position = position +1;
   
   //terminal velocity
-  if (speed > 20) {
-    speed = 20;
+  if (speed > 2) {
+    speed = 2;
   }
   
   //screenwrap
-  if (position > height) { 
-    position = 0;
+  if (position > height+50) { 
+    position = -50;
   }
 }
