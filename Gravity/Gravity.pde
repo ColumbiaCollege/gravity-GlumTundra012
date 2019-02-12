@@ -10,12 +10,13 @@ PImage face;
 void setup() {
   size(1200, 700);
   position = height/2;
+  face = loadImage ("face.jpg");
 }
 
 void draw() {
   background(#000000);
   imageMode(CENTER);
-  face = loadImage ("face.jpg");
+  
   image(face, position, height/2);
   //rect(0, position, width, 5);
   //speed of object
