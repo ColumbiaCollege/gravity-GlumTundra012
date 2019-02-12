@@ -15,7 +15,7 @@ void setup() {
   position = height/2;
   
   //initialize image
-  face = loadImage ("face.jpg");
+  face = loadImage("face.jpg");
   
   //draw images by center
   imageMode(CENTER);
@@ -26,12 +26,16 @@ void draw() {
   background(#000000);
   
   //draws the image 'face' at x,y
-  image(face, position, height/2);
+  image(face, width/2, position);
   
   //rect(0, position, width, 5);
   //speed of object
-  speed = speed +.1;
-  position = position + speed;
+  //speed = speed +.1;
+  //position = position + speed;
+  
+  //constant falling
+  position = position +1;
+  
   if (speed > 20) {
     speed = 20;
   }
