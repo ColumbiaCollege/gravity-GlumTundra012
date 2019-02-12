@@ -26,19 +26,23 @@ void draw() {
   background(#000000);
   
   //draws the image 'face' at x,y
-  image(face, width/2, position);
+  image(face, width/2, position,852/4.8,100);
   
-  //rect(0, position, width, 5);
-  //speed of object
-  //speed = speed +.1;
-  //position = position + speed;
+  //update speed by constant accell
+  speed = speed +.1;
+  
+  //updates position by speed
+  position = position + speed;
   
   //constant falling
-  position = position +1;
+  //position = position +1;
   
+  //terminal velocity
   if (speed > 20) {
     speed = 20;
   }
+  
+  //screenwrap
   if (position > height) { 
     position = 0;
   }
